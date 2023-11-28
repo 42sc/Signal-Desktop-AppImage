@@ -24,7 +24,7 @@ sudo apt-get install git-lfs -y
 
 
 # Install NVM (Node Version Manager) required node.js
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
 source $HOME/.nvm/nvm.sh
 nvm install v18.15.0
 npm install -g npm
