@@ -26,13 +26,13 @@ sudo apt-get install git-lfs -y
 # Install NVM (Node Version Manager) required node.js
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
 source $HOME/.nvm/nvm.sh
-nvm install v18.15.0
+nvm install v18.17.1
 npm install -g npm
 npm update -g
 
 
 # Clone Signal-Desktop repo
-git clone https://github.com/signalapp/Signal-Desktop.git
+git clone -b 6.42.x --single-branch https://github.com/signalapp/Signal-Desktop.git
 cd Signal-Desktop
 git-lfs install
 
@@ -71,4 +71,3 @@ EOF
 # Build
 yarn build-release
 echo "Output is in Signal-Desktop/release/"
-
